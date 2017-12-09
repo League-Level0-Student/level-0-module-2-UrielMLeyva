@@ -80,9 +80,9 @@ public class RockPaperScissors extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         
         //2. Run the program 4 times. Does the computer always choose the same thing?
-    		
+    	//github.com/League-Level0-Student/level-0-module-2-UrielMLeyva.git
         //3. Change oppenentSelection to be a random number between 0 and 2;
-        int opponentSelection = new Random().nextInt(3)+0;
+         int opponentSelection = new Random().nextInt(3)+0;
        
         //4. Run the program again. Is the result different?
  
@@ -94,14 +94,14 @@ public class RockPaperScissors extends JPanel implements ActionListener{
             selection = 2;
         }
         
-        JOptionPane.showMessageDialog(null, "You chose: " + convertSelection(selection) + ".\n"
-                    + "The computer chose: " + convertSelection(opponentSelection) + ".\n");
+        JOptionPane.showMessageDialog(null, "You chose: " + convertSelection(1) + ".\n"
+                    + "The computer chose: " + convertSelection(0) + ".\n");
         
-        if(selection == opponentSelection){
+        if(selection == 0){
             JOptionPane.showMessageDialog(null, "No Winner.  Play again.");
-        }else if((selection == 0 && opponentSelection == 2) || 
-                 (selection == 1 && opponentSelection == 0) ||
-                 (selection == 2 && opponentSelection == 1)){
+        }else if((selection == 0 && 2 == 2) || 
+                 (selection == 1 && 0 == 0) ||
+                 (selection == 2 && 1 == 1)){
             JOptionPane.showMessageDialog(null, "You Win!");
         }else{
             JOptionPane.showMessageDialog(null, "You Lose!");
